@@ -1,0 +1,20 @@
+{
+    "id": "./",
+    "name": "4nizz Study Hub",
+    "short_name": "4nizz Study",
+    "description": "Study subjects, chapters, notes and quizzes",
+    "lang": "hi",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f5f4fb",
+    "theme_color": "#17142f",
+    "icons": [
+        {
+            "src": "icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

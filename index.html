@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17142f">
+  <meta name="description" content="4nizz Study Hub - Notes, questions and quizzes">
+  <title>4nizz Study Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="brand" id="homeLogo">
+      <span class="logo">4N</span>
+      <span>4nizz <b>Study Hub</b></span>
+    </a>
+    <button id="languageBtn" class="small-btn">English</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR LEARNING SPACE</p>
+      <h1 id="heroTitle">पढ़ाई अब होगी आसान!</h1>
+      <p id="heroText">विषय चुनें, नोट्स पढ़ें और प्रश्न हल करें।</p>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="विषय या चैप्टर खोजें...">
+        <button id="searchBtn">खोजें</button>
+      </div>
+    </section>
+
+    <section class="section" id="subjectsSection">
+      <div class="section-heading">
+        <h2 id="subjectsTitle">अपने विषय चुनें</h2>
+        <span class="count" id="subjectCount">6 विषय</span>
+      </div>
+      <div id="subjectGrid" class="subject-grid"></div>
+    </section>
+
+    <section id="studySection" class="section study-section" hidden>
+      <button id="backBtn" class="back-btn">← सभी विषय</button>
+      <div class="study-heading">
+        <span id="studyIcon" class="study-icon">📘</span>
+        <div>
+          <h2 id="studyTitle">विषय</h2>
+          <p id="studyDescription">अध्ययन सामग्री</p>
+        </div>
+      </div>
+      <h3 class="subheading" id="chaptersTitle">अध्याय चुनें</h3>
+      <div id="chapterList" class="chapter-list"></div>
+
+      <article id="lesson" class="lesson" hidden>
+        <p class="eyebrow" id="lessonLabel">CHAPTER NOTES</p>
+        <h3 id="lessonTitle"></h3>
+        <div id="lessonContent" class="lesson-content"></div>
+        <button id="markDoneBtn" class="secondary-btn">अध्याय पूरा करें ✓</button>
+        <div class="quiz-heading">
+          <h3 id="quizTitle">अभ्यास प्रश्न</h3>
+          <span id="questionCount" class="count"></span>
+        </div>
+        <div id="quizArea"></div>
+        <button id="submitQuizBtn" class="primary-btn">टेस्ट का परिणाम देखें</button>
+        <div id="quizResult" class="quiz-result" hidden></div>
+        <button id="retryBtn" class="secondary-btn" hidden>फिर से टेस्ट दें</button>
+      </article>
+    </section>
+
+    <section class="section progress-section">
+      <p class="eyebrow">YOUR JOURNEY</p>
+      <h2 id="progressTitle">तुम्हारी पढ़ाई</h2>
+      <p id="progressText">अपनी प्रगति यहाँ देखें।</p>
+      <div class="progress-track"><div id="progressBar"></div></div>
+      <p id="progressCount">0 अध्याय पूरे किए</p>
+      <button id="resetProgress" class="text-btn">प्रोग्रेस रीसेट करें</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> 4nizz Study Hub</p>
+    <p>Learn something new every day ✨</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
